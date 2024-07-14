@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Enhancer</title>
+  <link rel="stylesheet" href="popup.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <style>
+    .swiper-container {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <h2 class="explanationHeader">Upload your resume here</h2>
+    <form action="#">
+      <input class="file-input" type="file" name="file" hidden>
+      <i class="fas fa-cloud-upload-alt"></i>
+      <p>Browse File to Upload</p>
+    </form>
+    <section class="progress-area"></section>
+    <section class="uploaded-area"></section>
+    <div class="submitBtnContainer">
+        <button id="submitFileButton" disabled>SUBMIT</button>
+    </div>
+    <div class="preview-area"></div> 
+    
+
+    <div class="swiper-container tranding-slider">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="hover-circle">&#10004;</div>
+              <img class="resumeTemplate" src="https://cdn.create.microsoft.com/catalog-assets/en-us/ce343500-4aff-4dfa-b337-57c78459c6ee/thumbnails/616/modern-nursing-resume-orange-modern-geometric-1-1-1dc2d11a00d6.webp">
+            </div>
+          
+            <div class="swiper-slide">
+              <div class="hover-circle">&#10004;</div>
+              <img class="resumeTemplate" src="https://marketplace.canva.com/EAFRuCp3DcY/1/0/1131w/canva-black-white-minimalist-cv-resume-f5JNR-K5jjw.jpg">
+            </div>
+          
+            <div class="swiper-slide">
+              <div class="hover-circle">&#10004;</div>
+              <img class="resumeTemplate" src="https://d25zcttzf44i59.cloudfront.net/official-resume-template.png">
+            </div>
+          
+            <div class="swiper-slide">
+              <div class="hover-circle">&#10004;</div>
+              <img class="resumeTemplate" src="https://cdn.create.microsoft.com/catalog-assets/en-us/d68df550-2dce-4601-ac59-22b431043ee8/thumbnails/616/social-media-marketing-resume-blue-modern-simple-1-1-ec5f2f560fde.webp">
+            </div>
+          
+            <div class="swiper-slide">
+              <div class="hover-circle">&#10004;</div>
+              <img class="resumeTemplate" src="https://www.freesumes.com/wp-content/uploads/2023/05/resume-template-with-photo.jpg">
+            </div>
+          
+            <div class="swiper-slide">
+              <div class="hover-circle">&#10004;</div>
+              <img class="resumeTemplate" src="https://www.careerreload.com/wp-content/uploads/2020/12/resume-template-karen.jpg">
+            </div>
+          
+          </div>
+        <div class="swiper-pagination"></div>
+        
+        <div class="swiperButtonContainer">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            
+        </div>  
+        
+        
+    </div>
+
+
+    <section id="loaderSection" style="display: none;">
+        <div class="loader">
+            <span style="--i:1"></span>
+            <span style="--i:2"></span>
+            <span style="--i:3"></span>
+            <span style="--i:4"></span>
+            <span style="--i:5"></span>
+            <span style="--i:6"></span>
+            <span style="--i:7"></span>
+            <span style="--i:8"></span>
+            <span style="--i:9"></span>
+            <span style="--i:10"></span>
+            <span style="--i:11"></span>
+            <span style="--i:12"></span>
+            <span style="--i:13"></span>
+            <span style="--i:14"></span>
+            <span style="--i:15"></span>
+            <span style="--i:16"></span>
+            <span style="--i:17"></span>
+            <span style="--i:18"></span>
+            <span style="--i:19"></span>
+            <span style="--i:20"></span>
+        </div>
+    </section>
+
+    <div id="adContainer" style="display: none;">AD</div>
+
+  </div>
+
+  <script src="swiper.js"></script>
+  <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+  <script src="popup.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
